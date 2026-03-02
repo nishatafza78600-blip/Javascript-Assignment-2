@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 12 to 13</title>
+</head>
+<body>
+    <script>
+        
+
+// -------chp 12 to 13
+
+// 1
+let input = prompt("Enter a character (number):");
+let charCode = input.charCodeAt(0);
+
+if (charCode >= 48 && charCode <= 57) {
+    console.log("The input is a Number.");
+} else if (charCode >= 65 && charCode <= 90) {
+    console.log("The input is an Uppercase letter.");
+} else if (charCode >= 97 && charCode <= 122) {
+    console.log("The input is a Lowercase letter.");
+} else {
+    console.log("The input is a special character or symbol.");
+}
+
+
+
+// 2
+
+var num1 = parseInt(prompt("Enter first integer:"));
+var num2 = parseInt(prompt("Enter second integer:"));
+
+if (num1 > num2) {
+    console.log(num1 + " is larger.");
+} else if (num2 > num1) {
+    console.log(num2 + " is larger.");
+} else {
+    console.log("Both integers are equal.");
+}
+
+// 3
+let number = parseFloat(prompt("Enter a number:"));
+
+if (number > 0) {
+    console.log("The number is positive.");
+} else if (number < 0) {
+    console.log("The number is negative.");
+} else {
+    console.log("The number is zero.");
+}
+
+4
+
+let vowel = prompt("Enter a single character:").toLowerCase();
+
+if (vowel === 'a' || vowel === 'e' || vowel === 'i' ||vowel === 'o' || vowel === 'u') {
+    console.log(true);
+} else {
+    console.log(false); 
+}
+
+5
+
+
+let correctPassword = "Password123";
+
+let userPassword = prompt("Please enter your password:");
+
+if (!userPassword) {
+    alert("Please enter your password");
+} 
+
+else if (userPassword === correctPassword) {
+    alert("Correct! The password you entered matches the original password");
+} 
+else {
+    alert("Incorrect password");
+}
+
+// 6
+
+var greeting;
+var hour = 18;
+
+if (hour < 18) {
+    greeting = "Good day";
+    alert("Good day")
+} else {
+    greeting = "Good evening";
+      alert("Good eveing")
+}
+
+console.log(greeting); 
+
+
+    </script>
+
+
+<div style="  
+height: 10vh;
+width: 270px;
+margin: 10vh auto;
+background-color: cadetblue;
+    padding: 1em 1.5em 1em 1.5em;
+    border-radius: 2em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+    <h1><a href="./index.html">back to home page</a></h1>
+</div>
+
+
+
+</body>
+</html>
